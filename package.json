@@ -4,7 +4,8 @@
   "description": "Estudo de jS com TDD",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "pre-push": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/silvioclipper/tdd-js/issues"
   },
-  "homepage": "https://github.com/silvioclipper/tdd-js#readme"
+  "homepage": "https://github.com/silvioclipper/tdd-js#readme",
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "husky": "^6.0.0"
+  }
 }
